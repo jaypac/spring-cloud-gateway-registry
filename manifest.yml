@@ -1,0 +1,10 @@
+---
+applications:
+  - name: gateway-registry
+    path: ./target/demo-0.0.1-SNAPSHOT.jar
+    buildpacks:
+      - java_buildpack
+    env:
+      JAVA_VERSION: 1.8.0_+
+    services:
+      - service-registry
